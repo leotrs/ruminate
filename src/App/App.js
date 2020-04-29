@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+
+import { MathpixMarkdown, MathpixLoader } from "../lib/mathpix-markdown-it";
+
 import "./App.css";
 
 function App() {
