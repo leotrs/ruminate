@@ -16,6 +16,7 @@ function App() {
           onChange={(event) => {
             setMarkdownInput(event.target.value);
           }}
+          value={markdownInput}
         />
         <div>{markdownInput}</div>
       </main>
