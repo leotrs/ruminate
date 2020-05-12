@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
-import { MathpixMarkdown, MathpixLoader } from "../lib/mathpix-markdown-it";
+import { MathpixMarkdown, MathpixLoader } from "mathpix-markdown-it";
 
 import "./App.css";
 
@@ -18,7 +18,9 @@ function App() {
           }}
           value={markdownInput}
         />
-        <div>{markdownInput}</div>
+        <MathpixLoader>
+          <MathpixMarkdown text={markdownInput} />
+        </MathpixLoader>
       </main>
     </div>
   );
