@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "@theme-ui/presets": "^0.3.0",
     "markdown-it-abbr": "^1.0.4",
     "mathpix-markdown-it": "github:leotrs/mathpix-markdown-it#leo-dev",
     "react": "^16.13.1",

@@ -1,16 +1,23 @@
 import React from "react";
-import { useRecoilState } from "recoil";
+import { atom, useRecoilState } from "recoil";
 import { jsx } from "theme-ui";
 import { MathpixMarkdown, MathpixLoader } from "mathpix-markdown-it";
 
+import mockEditorState from "./mockEditorState";
+
+const editorState = atom({
+  key: "editorState",
+  default: mockEditorState,
+});
+
 function Ruminate() {
-  const [markdownInput, setMarkdownInput] = useRecoilState("");
+  const [markdownInput, setMarkdownInput] = useRecoilState(editorState);
 
   return (
-    <div className="Ruminate">
-      <header className="Ruminate-header">Ruminate</header>
+    <div>
+      <header>Ruminate</header>
       <main>
-        <div>Test</div>
+        <div>Markdown Editor</div>
         <textarea
           onChange={(event) => {
             setMarkdownInput(event.target.value);

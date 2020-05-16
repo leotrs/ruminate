@@ -1,0 +1,5 @@
+(3.7) Let $E=F_{1} \oplus F_{2}$. If $B_{1}$ is a basis of $F_{1}$ and $B_{2}$ is a basis of $F_{2}$, show that ${B}_{1} \cup {B}_{2}$ is a basis of $E$.
+ 
+This is HTML abbreviation example.
+It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on 
+*[HTML]: Hyper Text Markup Language
