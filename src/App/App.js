@@ -12,7 +12,7 @@ function App() {
       <header className="App-header">Ruminate</header>
       <main>
         <div>Test</div>
-        <input
+        <textarea
           onChange={(event) => {
             setMarkdownInput(event.target.value);
           }}
