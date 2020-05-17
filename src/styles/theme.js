@@ -14,6 +14,12 @@ const theme = merge(funk, {
       'source-code-pro, Menlo, Monaco, Consolas, "Courier New",monospace',
   },
   colors: {
+    text: "#000",
+    background: "#fff",
+    primary: "#609",
+    secondary: "#306",
+    muted: "#f6f6f6",
+
     modes: {
       dark: {
         background: "#2b2b2b",
@@ -38,7 +44,7 @@ const theme = merge(funk, {
   },
   text: {
     title: {
-      // textDecoration: "underline",
+      textDecoration: "underline",
     },
   },
   useColorSchemeMediaQuery: true,

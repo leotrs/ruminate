@@ -1,10 +1,8 @@
 import { atom } from "recoil";
 
-import mockEditorState from "../mockEditorState";
-
-const markdownEditorState = atom({
-  key: "ruminate/markdownEditorState",
-  default: mockEditorState,
+const editorText = atom({
+  key: "ruminate/editorText",
+  default: "",
 });
 
-export { markdownEditorState };
+export { editorText };

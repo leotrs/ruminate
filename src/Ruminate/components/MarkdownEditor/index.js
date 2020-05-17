@@ -1,3 +1,3 @@
-import MarkdownEditor, { markdownEditorState } from "./MarkdownEditor";
+import MarkdownEditor from "./MarkdownEditor";
 
-export { MarkdownEditor as default, markdownEditorState };
+export default MarkdownEditor;

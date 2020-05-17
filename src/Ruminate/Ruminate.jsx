@@ -1,33 +1,43 @@
-import React from "react";
-import { atom, useRecoilState } from "recoil";
-import { jsx } from "theme-ui";
-import { MathpixMarkdown, MathpixLoader } from "mathpix-markdown-it";
+/** @jsx jsx */
+import { Heading, jsx } from "theme-ui";
 
-import mockEditorState from "./mockEditorState";
-
-const editorState = atom({
-  key: "editorState",
-  default: mockEditorState,
-});
+import { FormattedResults, MarkdownEditor } from "./components";
 
 function Ruminate() {
-  const [markdownInput, setMarkdownInput] = useRecoilState(editorState);
-
   return (
-    <div>
-      <header>Ruminate</header>
-      <main>
-        <div>Markdown Editor</div>
-        <textarea
-          onChange={(event) => {
-            setMarkdownInput(event.target.value);
+    <div
+      sx={{
+        margin: 2,
+      }}
+    >
+      <Heading
+        as="h1"
+        sx={{
+          fontSize: 6,
+        }}
+        variant="title"
+      >
+        Ruminate
+      </Heading>
+      <div
+        sx={{
+          display: ["block", "flex"],
+          justifyContent: [null, "space-between"],
+          marginTop: 2,
+          height: "85vh",
+        }}
+      >
+        <MarkdownEditor
+          sx={{
+            marginRight: 2,
           }}
-          value={markdownInput}
         />
-        <MathpixLoader>
-          <MathpixMarkdown text={markdownInput} />
-        </MathpixLoader>
-      </main>
+        <FormattedResults
+          sx={{
+            marginLeft: 2,
+          }}
+        />
+      </div>
     </div>
   );
 }
