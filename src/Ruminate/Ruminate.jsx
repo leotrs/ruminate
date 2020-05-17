@@ -22,7 +22,7 @@ function Ruminate() {
       <div
         sx={{
           display: ["block", "flex"],
-          justifyContent: [null, "space-between"],
+          justifyContent: [null, "flex-start"],
           marginTop: 2,
           height: "85vh",
         }}
