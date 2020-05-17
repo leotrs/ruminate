@@ -14,15 +14,11 @@ function FormattedResults(props) {
       sx={{
         border: (theme) => `1px solid ${theme.colors.text}`,
         height: "auto",
+        minWidth: ["90%", "45%"],
       }}
     >
       <MathpixLoader>
-        <MathpixMarkdown
-          text={editorText}
-          sx={{
-            minWidth: ["90%", "45%"],
-          }}
-        />
+        <MathpixMarkdown text={editorText} />
       </MathpixLoader>
     </section>
   );
